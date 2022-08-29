@@ -27,12 +27,13 @@
                     <label>Outlet Address</label>
                     <textarea class="form-control" name="outlet_address" rows="4"></textarea>
                   </div>
-                </form>
+
               </div>
 
               <div class="card-footer">
                 <button type="submit" class="btn btn-primary">SAVE</button>
               </div>
+            </form>
             </div>
             </div>
           </div>

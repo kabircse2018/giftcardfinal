@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\outlet;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Str;
+use Auth;
 
 class OutletController extends Controller
 {
@@ -42,6 +43,7 @@ class OutletController extends Controller
 
         $outlet = new outlet;
         $outlet->outlet_name = $request->outlet_name;
+        $outlet->user_id = Auth::user()->id;
         $outlet->outlet_slug = Str::of($request->outlet_name)->slug('-');
         $outlet->outlet_address = $request->outlet_address;
         $outlet->save();

@@ -31,4 +31,4 @@ Route::get('create', [GiftcardController::class, 'create'])->name('giftcard.crea
 
 //__Outlet Route__//
 Route::get('outlet/create', [OutletController::class, 'create'])->name('outlet.create');
-Route::get('outlet/store', [OutletController::class, 'store'])->name('outlet.store');
+Route::post('outlet/store', [OutletController::class, 'store'])->name('outlet.store');
