@@ -28,7 +28,7 @@ class GiftcardController extends Controller
      */
     public function create()
     {
-        return view('backend.giftcard.careate');
+
     }
 
     /**
