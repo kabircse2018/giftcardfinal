@@ -27,6 +27,7 @@ require __DIR__.'/auth.php';
 
 //__Gift card Route__//
 Route::get('create', [GiftcardController::class, 'create'])->name('giftcard.create');
+Route::post('store', [GiftcardController::class, 'store'])->name('giftcard.store');
 
 
 //__Outlet Route__//
