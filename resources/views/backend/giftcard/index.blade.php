@@ -17,19 +17,35 @@
                     <thead>
                     <tr>
                     <th>Sl.</th>
-                    <th>Outlet Name</th>
-                    <th>Outlet Slug</th>
-                    <th>Outlet Address</th>
+                    <th>outlet_name</th>
+                    <th>Invoice No</th>
+                    <th>order_date</th>
+                    <th>customer_name</th>
+                    <th>order_id</th>
+                    <th>customer_contact</th>
+                    <th>order_qty</th>
+                    <th>validity_month</th>
+                    <th>order_price</th>
+                    <th>actual_price</th>
+                    <th>customer_address</th>
                     <th>Action</th>
                     </tr>
                     </thead>
                     <tbody>
-                    @foreach($outlets as $key=>$row)
+                    @foreach($giftcards as $key=>$row)
                             <tr>
                                 <td>{{++$key}}</td>
-                                <td>{{$row->outlet_name}}</td>
-                                <td>{{$row->outlet_slug}}</td>
-                                <td>{{$row->outlet_address}}</td>
+                                <td>{{$row->outlet->outlet_name}}</td>
+                                <td>{{$row->invoice_no}}</td>
+                                <td>{{$row->order_date}}</td>
+                                <td>{{$row->customer_name}}</td>
+                                <td>{{$row->order_id}}</td>
+                                <td>{{$row->customer_contact}}</td>
+                                <td>{{$row->order_qty}}</td>
+                                <td>{{$row->validity_month}}</td>
+                                <td>{{$row->order_price}}</td>
+                                <td>{{$row->actual_price}}</td>
+                                <td>{{$row->customer_address}}</td>
                                 <td>
                                     <a href="#" class="btn btn-sm btn-dark" ><i class="fas fa-edit "></i></a>
                                     <a href="#" class="btn btn-sm btn-danger delete-confirm delete" onclick="return myFunction();"><i class="fas fa-trash "></i></a>

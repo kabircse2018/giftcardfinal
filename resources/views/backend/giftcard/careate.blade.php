@@ -39,10 +39,10 @@
                      @enderror
                     </div>
 
-                    <div class="form-group col-md-3">
+                    {{-- <div class="form-group col-md-3">
                       <label>Unique Invoice No</label>
                       <input type="text" class="form-control" name="unique_invoice_no" placeholder="Unique Invoice No">
-                    </div>
+                    </div> --}}
 
                     <div class="form-group col-md-3">
                       <label>Order Date(MM-DD-YY)</label>

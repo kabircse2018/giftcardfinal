@@ -20,7 +20,8 @@ class GiftcardController extends Controller
      */
     public function index()
     {
-        //
+        $giftcards = giftcard::all();
+        return view('backend.giftcard.index', compact('giftcards'));
     }
 
     /**
